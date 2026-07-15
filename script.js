@@ -1,6 +1,8 @@
 const weddingDate = new Date('2026-09-07T16:00:00+05:30').getTime();
 const fields = ['days', 'hours', 'minutes', 'seconds'];
 
+setTimeout(() => document.body.classList.add('hero-revealed'), 3000);
+
 function updateCountdown() {
   let remaining = Math.max(0, weddingDate - Date.now());
   const values = [
